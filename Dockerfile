@@ -12,4 +12,7 @@ LABEL org.label-schema.name="Network Performance Measurement" \
       org.label-scheme.vendor="SK Telecom" \
       org.label-schema.schema-version="1.0"
 
+# accept connection on a set of services
+EXPOSE 5000 5001 5002 5003 5004
+
 ENTRYPOINT ["/bin/bash"]
