@@ -2,7 +2,7 @@ FROM centos:7
 MAINTAINER Jian Li <gunine@sk.com>
 
 RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-RUN yum install -y sockperf iperf iperf3
+RUN yum install -y sockperf iperf iperf3 net-tools
 
 # meta information of this container
 LABEL org.label-schema.name="Network Performance Measurement" \
